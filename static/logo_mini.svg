@@ -1,0 +1,19 @@
+<svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M21.7179 3.30135C19.4191 1.22351 16.3044 0 12.8535 0C5.70536 0 0 5.24934 0 12.4672C0 19.685 5.70536 25 12.8535 25V21.063C8.39409 21.063 4.6561 17.4541 4.6561 12.4672C4.6561 7.48032 8.39409 3.93701 12.8535 3.93701C15.0989 3.93701 17.1344 4.80954 18.6154 6.29802L21.7179 3.30135Z" fill="url(#paint0_angular)"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M16.8272 8.55769C15.7967 7.66718 14.4004 7.14282 12.8534 7.14282C9.64913 7.14282 7.09155 9.39254 7.09155 12.4859C7.09155 15.5793 9.64913 17.8571 12.8534 17.8571V16.1698C10.8544 16.1698 9.17877 14.6231 9.17877 12.4859C9.17877 10.3487 10.8544 8.83011 12.8534 8.83011C13.86 8.83011 14.7725 9.20405 15.4364 9.84197L16.8272 8.55769Z" fill="url(#paint1_angular)"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M25.5836 10.6546C25.3361 8.86476 24.7248 7.2283 23.8254 5.80357L20.138 8.43067C20.5377 9.23809 20.8182 10.1328 20.9552 11.0967L25.5836 10.6546ZM25.5836 14.2857L20.9552 13.8393C20.8182 14.8055 20.5377 15.7048 20.138 16.5179L23.8669 19.0871C24.7425 17.6739 25.3397 16.0555 25.5836 14.2857ZM15.5128 20.6244C16.4971 20.2869 17.397 19.7639 18.1721 19.0871L21.0508 22.2329C19.7035 23.2939 18.125 24.0839 16.3992 24.5425L15.5128 20.6244Z" fill="url(#paint2_angular)"/>
+<defs>
+<radialGradient id="paint0_angular" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(12.8535 12.5) rotate(90) scale(12.5 12.8535)">
+<stop stop-color="#1985C2"/>
+<stop offset="1" stop-color="#30D9C5"/>
+</radialGradient>
+<radialGradient id="paint1_angular" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(12.8535 12.5) rotate(90) scale(5.35714 5.7619)">
+<stop stop-color="#1985C2"/>
+<stop offset="1" stop-color="#30D9C5"/>
+</radialGradient>
+<radialGradient id="paint2_angular" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(12.8535 12.5) rotate(90) scale(12.5 12.8535)">
+<stop stop-color="#1985C2"/>
+<stop offset="1" stop-color="#30D9C5"/>
+</radialGradient>
+</defs>
+</svg>
