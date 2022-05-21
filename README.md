@@ -1,7 +1,7 @@
-# searchList_payList
+# Landing 1
 
 
-> My ultimate Nuxt.js project
+> Ad and subscribe Landing of Service
 
 ## Build Setup
 
