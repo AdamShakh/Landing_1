@@ -18,7 +18,7 @@
             </div>
         </div>
         
-        <div class="allWeCan-register-account-button">
+        <div class="allWeCan-register-account-button" @click="$modal.show('register-acc-form');">
             <span class="button-text">
                 Register a free account and start trading now!
             </span>
@@ -27,6 +27,19 @@
                 Trade in minutes; deposits only require 1 confirmation.
             </span>
         </div>
+
+        <modal name='register-acc-form' height="440px">
+            <div class="register-form-cont">
+                <div class="header">Register new account:</div>
+                <div class="input-fields-cont">
+                    <div class='input-fields'>Name:<input type="text" v-model="name"></div>
+                    <div class='input-fields'>Email:<input type="text" v-model="email"></div>
+                    <div class='input-fields'>Telephone:<input type="text" v-model="telephone"></div>
+                </div>
+                <div class="send-button" @click="createAccount()">Create new account</div>
+            </div>
+        </modal>
+
     </div>
 </template>
 
@@ -43,7 +56,16 @@ export default {
                 
                 `But I must explain to you how all this mistaken idea of denouncing 
                 pleasure and praising pain was born and I will.`
-            ]
+            ],
+            name: '',
+            email: '',
+            telephone: '',
+        }
+    },
+    methods:{
+        createAccount (){
+            this.$modal.hide('register-acc-form')
+            // send to server
         }
     }
 }
@@ -109,6 +131,56 @@ export default {
         cursor: pointer;
         .button-text{
             color: rgb(155, 245, 11);
+        }
+    }
+}
+
+.register-form-cont{
+    padding: 2em;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    background-color: rgb(8, 16, 27); //#242424;
+
+    .header{
+        color: white;
+        font-size: 1.5em;
+        margin-bottom: 1em;
+        margin-top: 1em;
+    }
+    .input-fields-cont{
+        margin-bottom: 3em;
+        width: 350px;
+
+        .input-fields{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 1em;
+            input{
+                width: 250px;
+                height: 30px;
+                padding-left: .5em;
+                padding-right: .5em;
+            }
+        }
+    }
+    .send-button{
+        padding: 1em 2em;
+        font-weight: 700;
+        width: 12em;
+        text-align: center;
+        color: white;
+        background-image: url(/trytrading.svg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: center;
+        &:hover {
+            color: rgb(66, 245, 11);
+            cursor: pointer;
         }
     }
 }

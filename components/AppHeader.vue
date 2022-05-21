@@ -11,10 +11,10 @@
                 About
             </div>
             <div class="header-button">
-                Sign up
-            </div>
-            <div class="login-button">
                 Sign in
+            </div>
+            <div class="login-button" @click="$modal.show('sign-up-form');">
+                Sign up
             </div>
         </div>
     </div>
@@ -46,20 +46,56 @@
     </div>
 
     <!-- vue-js-modal -->
+    <modal name='sign-up-form' height="440px">
+        <div class="try-trading">
+            <div class="header">Register new account:</div>
+            <div class="input-fields-cont">
+                <div class='input-fields'>Name:<input type="text" v-model="name"></div>
+                <div class='input-fields'>Email:<input type="text" v-model="email"></div>
+                <div class='input-fields'>Telephone:<input type="text" v-model="telephone"></div>
+            </div>
+            <div class="send-button" @click="createAccount()">Create new account</div>
+        </div>
+    </modal>
+
     <modal name="try-trading-form" height="440px">
         <div class="try-trading">
-            <div class="header">Оформить заявку:</div>
+            <div class="header">Apply for a trading:</div>
             <div class="input-fields-cont">
-                <div class='inputik'>Имя:<input type="text"></div>
-                <div class='inputik'>Email:<input type="text"></div>
-                <div class='inputik'>Телефон:<input type="text"></div>
+                <div class='input-fields'>Name:<input type="text" v-model="name"></div>
+                <div class='input-fields'>Email:<input type="text" v-model="email"></div>
+                <div class='input-fields'>Telephone:<input type="text" v-model="telephone"></div>
             </div>
-            <div class="send-button">Отправить</div>
+            <div class="send-button" @click="apply_request()">Send</div>
         </div>
     </modal>
 
 </div> 
 </template>
+
+<script>
+export default {
+    data(){
+        return{
+            name: '',
+            email: '',
+            telephone: '',
+        }
+        
+    },
+    methods: {
+        apply_request (){
+            this.$modal.hide('try-trading-form')
+            // send to server
+        },
+        createAccount(){
+            this.$modal.hide('sign-up-form')
+            // send to server
+        }
+    }
+}
+</script>
+
                                 
 <style lang="scss" scoped>              // screen на print - если идёт на печать , другой layout
                                         // break point       media quires
@@ -215,7 +251,7 @@
         margin-bottom: 3em;
         width: 350px;
 
-        .inputik{
+        .input-fields{
             display: flex;
             justify-content: space-between;
             align-items: center;

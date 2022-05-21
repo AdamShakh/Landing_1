@@ -11,7 +11,7 @@
 <script>
 import AppHeader from '@/components/AppHeader.vue'
 import MainPart from '@/components/MainPart.vue'
-import AllWhatWeCan from '@/components/AallWhatWeCan.vue'
+import AllWhatWeCan from '@/components/AllWhatWeCan.vue'
 import myFooter from '@/components/Footer.vue'
 import appFooter from '@/components/Footer/MyFooter.vue'
 
