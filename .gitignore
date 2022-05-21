@@ -142,3 +142,6 @@ dist
 
 # Service worker
 sw.*
+
+# Editor
+.editorconfig
